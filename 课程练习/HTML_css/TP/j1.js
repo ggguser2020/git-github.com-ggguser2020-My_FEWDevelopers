@@ -10,5 +10,6 @@ function re_x(x) {
 let i=prompt("你是什么星座的？");
 re_x(i);
 
+git remote add origin https://e.coding.net/dsgl999/coding_My_FEWDevelopers/coding_My_FEWDevelopers.git
 
 
