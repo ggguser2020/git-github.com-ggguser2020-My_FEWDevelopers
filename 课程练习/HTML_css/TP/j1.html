@@ -6,14 +6,15 @@
 </head>
 <body>
 <script>
-    function re_x(x) {
-        let a = 1;
-        while (a <= Number.parseInt(x)) {
-            document.write("x---" + a+"</br>");
-            a++;
+    let origin=1;
+    function xxx(){
+        origin++;
+        return function yyy(){
+            return origin;
         }
     }
-    re_x(prompt("你是什么星座的？"));
+    document.write(yyy()+"</br>");
+
 </script>
 </body>
 </html>
