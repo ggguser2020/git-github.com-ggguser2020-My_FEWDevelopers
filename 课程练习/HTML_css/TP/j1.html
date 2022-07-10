@@ -3,18 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
 </head>
 <body>
-<script>
-    let origin=1;
-    function xxx(){
-        origin++;
-        return function yyy(){
-            return origin;
-        }
-    }
-    document.write(yyy()+"</br>");
+<button class="cBtn">按钮</button>
 
-</script>
 </body>
 </html>
+<script>
+    let btn=document.getElementsByTagName("button")[0];
+
+    //下方onclick为函数，但此处为赋值，所以后面不加(),   始果写成btn.onclick(),运行时浏览器错误，Uncaught TypeError: btn.onclick is not a function
+    btn.onclick=function (){
+        alert("112233");
+    }
+
+    // let origin=1;
+    // function xxx(){
+    //     origin++;
+    //     return function yyy(){
+    //         return origin;
+    //     }
+    // }
+    // document.write(yyy()+"</br>");
+
+</script>
