@@ -5,26 +5,29 @@
     <title>Title</title>
 
 </head>
-<body>
-<button class="cBtn">按钮</button>
+<body id="body1">
+<div id="div1">
+    <p id="p1">这是一个段落。</p>
+    <p id="p2">这是另一个段落。</p>
+</div>
 
 </body>
 </html>
-<script>
-    let btn=document.getElementsByTagName("button")[0];
+<script> //创建元素节点并加入页面
+    // 1、创建一个 p 标签元素节点，
+    let para = document.createElement("p");
+    // 2、创建一个文本节点，内容为"这是一个新段落。
+    let node = document.createTextNode("这是一个新段落。");
+    // 3、将文本节点装入 P 标签的最后一个子节点
+    para.appendChild(node);
+    // 4、查找 ID 为body1的元素节点
+    let element = document.getElementById("body1");
+    // 5、将刚才装入了文本节点的 P 标签装入 ID 为body1的元素节点最后一个子节点
+    element.appendChild(para);
 
-    //下方onclick为函数，但此处为赋值，所以后面不加(),   始果写成btn.onclick(),运行时浏览器错误，Uncaught TypeError: btn.onclick is not a function
-    btn.onclick=function (){
-        alert("112233");
+    document.onclick=function (){
+        MouseEvent.client+X
+        let x=event.clientX;
+
     }
-
-    // let origin=1;
-    // function xxx(){
-    //     origin++;
-    //     return function yyy(){
-    //         return origin;
-    //     }
-    // }
-    // document.write(yyy()+"</br>");
-
 </script>
