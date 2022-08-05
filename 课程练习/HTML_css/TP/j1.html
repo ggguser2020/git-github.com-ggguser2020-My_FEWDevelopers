@@ -25,9 +25,11 @@
     // 5、将刚才装入了文本节点的 P 标签装入 ID 为body1的元素节点最后一个子节点
     element.appendChild(para);
 
-    document.onclick=function (){
-        MouseEvent.client+X
-        let x=event.clientX;
-
+    document.onclick=function (e){
+        let oEvent=e||event;
+        oEvent.stopPropagation(); //用此方法阻止事件流冒泡连续产生
     }
+    document.getElementsByName()
+document.onfullscreenchange
+document.getElementsByTagName()
 </script>
