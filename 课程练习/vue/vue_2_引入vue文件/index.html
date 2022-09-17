@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="scr/vue.global.js"></script>
+</head>
+<body>
+<div id="app"></div>
+
+
+<script>
+    import vue from "@vitejs/plugin-vue";
+    import {createApp} from "vue";
+
+    const   app=createApp({
+
+    })
+//  .mount() 方法应该始终在整个应用配置和资源注册完成后被调用。同时请注意，不同于其他资源注册方法，它的返回值是根组件实例而非应用实例。
+app.mount('#app')
+</script>
+</body>
+</html>
