@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="file://$PROJECT_DIR$/Web Development Bootcamp2022/Calculator" libraries="{前端练习项目缓存/Web Development Bootcamp2022/Calculator/node_modules}" />
-    <file url="PROJECT" libraries="{前端练习项目缓存/Web Development Bootcamp2022/Calculator/node_modules}" />
     <excludedPredefinedLibrary name="HTML" />
   </component>
 </project>
