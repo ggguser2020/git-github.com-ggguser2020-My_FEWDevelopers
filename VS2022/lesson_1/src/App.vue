@@ -14,11 +14,15 @@ let msg_a="abcdsfdsaf"
     </div>
   </header>
   <br>  
+npm init vue@latest
+> cd <your-project-name>
+> npm install
+> npm run dev
 
 
 
 
-
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
   <main>
     <!-- <TheWelcome /> -->

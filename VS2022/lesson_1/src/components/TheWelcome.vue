@@ -12,7 +12,6 @@ import SupportIcon from './icons/IconSupport.vue'
   <WelcomeItem>
     <template #icon>
       <DocumentationIcon />
-      <h1>{{msg1}}</h1>
     </template>
     <template #heading>Documentation</template>
 
